@@ -16,7 +16,7 @@ const getSubscribers = () => {
         subCount.innerHTML = data["items"][0].statistics.subscriberCount;
         viewCount.innerHTML = data["items"][0].statistics.viewCount;
         // console.log(data["items"][0].statistics)
-        for(let i = 0; i <= data["items"][0].statistics.subscriberCount; i++){
+        for(let i = 0; i < data["items"][0].statistics.subscriberCount; i++){
 
             let tag = document.createElement("p")
             let text = document.createTextNode(i)
