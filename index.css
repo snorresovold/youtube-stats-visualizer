@@ -1,0 +1,8 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    font-size: larger;
+    display: grid;
+    justify-content: space-evenly;
+    width: 30%;
+}

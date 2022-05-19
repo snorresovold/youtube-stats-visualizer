@@ -18,9 +18,15 @@ const getSubscribers = () => {
         // console.log(data["items"][0].statistics)
         for(let i = 0; i < data["items"][0].statistics.subscriberCount; i++){
 
-            let tag = document.createElement("p")
-            let text = document.createTextNode(i)
-            tag.appendChild(text)
+            let tag = document.createElement("div")
+            tag.style.color = "blue"
+            tag.style.backgroundColor = "blue"
+            tag.style.height = "25px"
+            tag.style.width = "25px"
+            tag.style.borderRadius = "6px"
+
+
+
             let element = document.getElementById("yt-1")
             element.prepend(tag)
             
