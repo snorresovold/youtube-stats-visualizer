@@ -24,6 +24,7 @@ const getSubscribers = () => {
             tag.style.height = "25px"
             tag.style.width = "25px"
             tag.style.borderRadius = "6px"
+            tag.style.marginTop = "6px"
 
 
 
