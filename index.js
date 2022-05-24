@@ -1,14 +1,18 @@
 const youtubeKey = "AIzaSyCfTeazbNjD2f3FGJcTfwhYreV5eXyqxis";
-const youtubeUser = "UCX8csL673ZPzx9yxuaTlp0A";
+const youtubeUser = "Addexio";
 
 
 const subCount = document.getElementById('subcount');
 
 const viewCount = document.getElementById('viewcount');
 
+
 const getSubscribers = () => {
 
-    fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&id=${youtubeUser}&key=${youtubeKey}`)
+
+
+
+    fetch(`https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=${youtubeUser}&key=${youtubeKey}`)
     .then(response => {
         return response.json()
     })
